@@ -17,7 +17,7 @@ public class Movie extends org.apache.avro.specific.SpecificRecordBase implement
   private static final long serialVersionUID = 6318149598266971079L;
 
 
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Movie\",\"namespace\":\"mx.example.camelk.schema\",\"fields\":[{\"name\":\"title\",\"type\":\"string\"},{\"name\":\"year\",\"type\":\"int\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Movie\",\"namespace\":\"mx.example.camelk\",\"fields\":[{\"name\":\"title\",\"type\":\"string\"},{\"name\":\"year\",\"type\":\"int\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static final SpecificData MODEL$ = new SpecificData();
@@ -152,8 +152,8 @@ public class Movie extends org.apache.avro.specific.SpecificRecordBase implement
    * Creates a new Movie RecordBuilder.
    * @return A new Movie RecordBuilder
    */
-  public static mx.example.camelk.schema.Movie.Builder newBuilder() {
-    return new mx.example.camelk.schema.Movie.Builder();
+  public static mx.example.camelk.Movie.Builder newBuilder() {
+    return new mx.example.camelk.Movie.Builder();
   }
 
   /**
@@ -161,11 +161,11 @@ public class Movie extends org.apache.avro.specific.SpecificRecordBase implement
    * @param other The existing builder to copy.
    * @return A new Movie RecordBuilder
    */
-  public static mx.example.camelk.schema.Movie.Builder newBuilder(mx.example.camelk.schema.Movie.Builder other) {
+  public static mx.example.camelk.Movie.Builder newBuilder(mx.example.camelk.Movie.Builder other) {
     if (other == null) {
-      return new mx.example.camelk.schema.Movie.Builder();
+      return new mx.example.camelk.Movie.Builder();
     } else {
-      return new mx.example.camelk.schema.Movie.Builder(other);
+      return new mx.example.camelk.Movie.Builder(other);
     }
   }
 
@@ -174,11 +174,11 @@ public class Movie extends org.apache.avro.specific.SpecificRecordBase implement
    * @param other The existing instance to copy.
    * @return A new Movie RecordBuilder
    */
-  public static mx.example.camelk.schema.Movie.Builder newBuilder(mx.example.camelk.schema.Movie other) {
+  public static mx.example.camelk.Movie.Builder newBuilder(mx.example.camelk.Movie other) {
     if (other == null) {
-      return new mx.example.camelk.schema.Movie.Builder();
+      return new mx.example.camelk.Movie.Builder();
     } else {
-      return new mx.example.camelk.schema.Movie.Builder(other);
+      return new mx.example.camelk.Movie.Builder(other);
     }
   }
 
@@ -201,7 +201,7 @@ public class Movie extends org.apache.avro.specific.SpecificRecordBase implement
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(mx.example.camelk.schema.Movie.Builder other) {
+    private Builder(mx.example.camelk.Movie.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.title)) {
         this.title = data().deepCopy(fields()[0].schema(), other.title);
@@ -217,7 +217,7 @@ public class Movie extends org.apache.avro.specific.SpecificRecordBase implement
      * Creates a Builder by copying an existing Movie instance
      * @param other The existing instance to copy.
      */
-    private Builder(mx.example.camelk.schema.Movie other) {
+    private Builder(mx.example.camelk.Movie other) {
       super(SCHEMA$, MODEL$);
       if (isValidValue(fields()[0], other.title)) {
         this.title = data().deepCopy(fields()[0].schema(), other.title);
@@ -243,7 +243,7 @@ public class Movie extends org.apache.avro.specific.SpecificRecordBase implement
       * @param value The value of 'title'.
       * @return This builder.
       */
-    public mx.example.camelk.schema.Movie.Builder setTitle(java.lang.CharSequence value) {
+    public mx.example.camelk.Movie.Builder setTitle(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.title = value;
       fieldSetFlags()[0] = true;
@@ -263,7 +263,7 @@ public class Movie extends org.apache.avro.specific.SpecificRecordBase implement
       * Clears the value of the 'title' field.
       * @return This builder.
       */
-    public mx.example.camelk.schema.Movie.Builder clearTitle() {
+    public mx.example.camelk.Movie.Builder clearTitle() {
       title = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -283,7 +283,7 @@ public class Movie extends org.apache.avro.specific.SpecificRecordBase implement
       * @param value The value of 'year'.
       * @return This builder.
       */
-    public mx.example.camelk.schema.Movie.Builder setYear(int value) {
+    public mx.example.camelk.Movie.Builder setYear(int value) {
       validate(fields()[1], value);
       this.year = value;
       fieldSetFlags()[1] = true;
@@ -303,7 +303,7 @@ public class Movie extends org.apache.avro.specific.SpecificRecordBase implement
       * Clears the value of the 'year' field.
       * @return This builder.
       */
-    public mx.example.camelk.schema.Movie.Builder clearYear() {
+    public mx.example.camelk.Movie.Builder clearYear() {
       fieldSetFlags()[1] = false;
       return this;
     }
