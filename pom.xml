@@ -5,7 +5,7 @@
 
   <groupId>com.github.mikeintoch</groupId>
   <artifactId>camel-k-example-events</artifactId>
-  <version>master-SNAPSHOT</version>
+  <version>main-SNAPSHOT</version>
 
   <name>camel-k-example-events</name>
 
