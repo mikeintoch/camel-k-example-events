@@ -5,7 +5,7 @@
 
   <groupId>mx.com.example</groupId>
   <artifactId>avroschema</artifactId>
-  <version>1.0</version>
+  <version>master-SNAPSHOT</version>
 
   <name>avroschema</name>
 
